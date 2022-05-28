@@ -4,20 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:padding="10dp"
     tools:context=".Login">
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Log In"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/lusername"
+    <ImageView
+        android:id="@+id/loginimage"
+        android:layout_width="100dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="13dp"
+        android:src="@drawable/presbyterian"
+        app:layout_constraintBottom_toTopOf="@+id/logheading"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/logheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#1EFFFFFF"
+        android:text="Ka Kot Jingrwai  Presbyterian"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lusername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.551" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/lusername"
@@ -27,6 +47,7 @@
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="120dp"
         android:hint="Email"
+        android:textColorHint="@color/black"
         android:theme="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,8 +58,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/transparent"
+            android:drawableStart="@drawable/ic_person_black_24dp"
             android:inputType="textEmailAddress"
-            android:textSize="12sp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
             tools:ignore="DuplicateClickableBoundsCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -52,6 +75,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
         android:hint="Password"
+        android:textColorHint="@color/black"
         android:theme="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,8 +86,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/transparent"
+            android:drawableStart="@drawable/locklogo"
             android:inputType="textPassword"
-            android:textSize="12sp" />
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -79,6 +105,7 @@
         android:layout_marginEnd="24dp"
         android:backgroundTint="@color/buttoncolor"
         android:text="@string/login"
+        android:textColor="@color/black"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -91,8 +118,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:padding="15dp"
+        android:padding="18dp"
         android:text="Not yet Registered? Sign Up now"
+        android:textColor="@color/blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginbtn" />

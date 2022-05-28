@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/name"
+    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
@@ -35,6 +36,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="24dp"
             android:hint="Full Name"
+            android:textColorHint="@color/black"
             android:theme="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -46,6 +48,7 @@
                 android:backgroundTint="@color/transparent"
                 android:inputType="textPersonName"
                 android:textSize="12sp"
+                android:textColor="@color/black"
                 tools:ignore="DuplicateClickableBoundsCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -58,6 +61,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="24dp"
             android:hint="Email"
+            android:textColorHint="@color/black"
             android:theme="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -69,6 +73,7 @@
                 android:backgroundTint="@color/transparent"
                 android:inputType="textEmailAddress"
                 android:textSize="12sp"
+                android:textColor="@color/black"
                 tools:ignore="DuplicateClickableBoundsCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -81,6 +86,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="24dp"
             android:hint="Age"
+            android:textColorHint="@color/black"
             android:theme="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -92,6 +98,7 @@
                 android:backgroundTint="@color/transparent"
                 android:inputType="numberDecimal"
                 android:textSize="12sp"
+                android:textColor="@color/black"
                 tools:ignore="DuplicateClickableBoundsCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -103,6 +110,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
             android:hint="Password"
+            android:textColorHint="@color/black"
             android:theme="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -114,7 +122,8 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/transparent"
                 android:inputType="textPassword"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:textColor="@color/black"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -125,6 +134,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="24dp"
             android:hint="Confirm Password"
+            android:textColorHint="@color/black"
             android:theme="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -136,7 +146,8 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/transparent"
                 android:inputType="textPassword"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:textColor="@color/black"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -199,7 +210,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Accept Terms And Conditions"
-                android:textSize="10dp" />
+                android:textSize="12dp"
+                android:textColor="@color/black"/>
         </LinearLayout>
 
         <Button
@@ -211,6 +223,7 @@
             android:text="Submit Details"
             android:textAlignment="center"
             android:textSize="12sp"
+            android:background="@color/buttoncolor"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

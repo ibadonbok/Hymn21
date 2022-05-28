@@ -11,14 +11,14 @@ import android.widget.Toast;
 import com.google.firebase.auth.FirebaseAuth;
 
 import hymn.book.kakotjingrwai01.databinding.ActivityDashBoardBinding;
-import hymn.book.kakotjingrwai01.databinding.ActivityNumberlistviewBinding;
+
 import hymn.book.kakotjingrwai01.databinding.ActivityUserHomeBinding;
 
 public class user_home extends AppCompatActivity {
 
     private FirebaseAuth auth;
     private ActivityUserHomeBinding homeBinding;
-    Button number, khorus;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,17 +35,53 @@ public class user_home extends AppCompatActivity {
 
 
         homeBinding.khorus.setOnClickListener(view -> {
-            Intent khorus = new Intent(user_home.this, khorus_number.class);
+            Intent khorus = new Intent(user_home.this, Chorus.class);
             startActivity(khorus);
 
         });
 
-        homeBinding.userProfileButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent user = new Intent(user_home.this, userProfile.class);
-                startActivity(user);
-            }
+        homeBinding.khynnah.setOnClickListener(view -> {
+            Intent khynnah = new Intent(user_home.this, Children.class);
+            startActivity(khynnah);
+
+        });
+
+        homeBinding.samla.setOnClickListener(view -> {
+            Intent samla = new Intent(user_home.this, Youth.class);
+            startActivity(samla);
+
+        });
+
+        homeBinding.revival.setOnClickListener(view -> {
+            Intent revival = new Intent(user_home.this, Revival.class);
+            startActivity(revival);
+
+        });
+
+        homeBinding.pynwai.setOnClickListener(view -> {
+            Intent pynwai = new Intent(user_home.this, Postlude.class);
+            startActivity(pynwai);
+
+        });
+
+        homeBinding.kurim.setOnClickListener(view -> {
+            Intent kurim = new Intent(user_home.this, Wedding.class);
+            startActivity(kurim);
+
+        });
+
+        homeBinding.iap.setOnClickListener(view -> {
+            Intent iap = new Intent(user_home.this, Funeral.class);
+            startActivity(iap);
+
+        });
+
+
+
+        homeBinding.christmas.setOnClickListener(view -> {
+            Intent christmas = new Intent(user_home.this, Christmas.class);
+            startActivity(christmas);
+
         });
 
         homeBinding.notepad.setOnClickListener(new View.OnClickListener() {
@@ -56,6 +92,11 @@ public class user_home extends AppCompatActivity {
             }
         });
 
+        homeBinding.userProfileButton.setOnClickListener(view -> {
+            Intent pro = new Intent(user_home.this, userProfile.class);
+            startActivity(pro);
+
+        });
 
         auth = FirebaseAuth.getInstance();
             homeBinding.logout.setOnClickListener(V -> {
@@ -63,6 +104,7 @@ public class user_home extends AppCompatActivity {
             startActivity(new Intent(getApplicationContext(), Login.class));
             finish();
         });
+
 
     }
 }

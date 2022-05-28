@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    tools:context=".DisplayChorus">
+
+    <ImageButton
+        android:id="@+id/chorusBackBtn"
+        android:layout_width="74dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="23dp"
+        android:backgroundTint="@color/transparent"
+        android:src="@drawable/back_icon"
+        app:layout_constraintBottom_toTopOf="@+id/chorusNumber"
+        app:layout_constraintEnd_toEndOf="@+id/chorusNumber"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.551"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/chorusheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginBottom="12dp"
+        android:text="Chorus"
+        android:textColor="@color/blue"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/chorusNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toEndOf="@+id/chorusBackBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.571" />
+
+    <TextView
+        android:id="@+id/chorusNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="165dp"
+        android:text="ChorusNumber: 1"
+        android:textColorLink="#95D7F4"
+
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/chorusscrollview"
+        android:layout_width="381dp"
+        android:layout_height="647dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="34dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chorusNumber"
+        app:layout_constraintVertical_bias="0.098">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/choruslyric"
+                android:layout_width="372dp"
+                android:layout_height="612dp"
+                android:layout_margin="20dp"
+                android:background="@color/blue"
+                android:backgroundTint="@color/white"
+                android:gravity="start"
+                android:text="Lyric"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                tools:layout_editor_absoluteX="24dp"
+                tools:layout_editor_absoluteY="115dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

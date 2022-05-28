@@ -10,25 +10,40 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KaKotJingrwai01">
         <activity
+            android:name=".Christmas"
+            android:exported="false" />
+        <activity
+            android:name=".Postlude"
+            android:exported="false" />
+        <activity
+            android:name=".Revival"
+            android:exported="false" />
+        <activity
+            android:name=".Youth"
+            android:exported="false" />
+        <activity
+            android:name=".Children"
+            android:exported="false" />
+        <activity
+            android:name=".Funeral"
+            android:exported="false" />
+        <activity
+            android:name=".Wedding"
+            android:exported="false" />
+        <activity
+            android:name=".DisplayChorus"
+            android:exported="false" />
+        <activity
+            android:name=".Chorus"
+            android:exported="false" />
+        <activity
             android:name=".DisplayHymn"
             android:exported="false" />
         <activity
             android:name=".userProfile"
             android:exported="false" />
         <activity
-            android:name=".hymn_view"
-            android:exported="false" />
-        <activity
             android:name=".note_saved"
-            android:exported="false" />
-        <activity
-            android:name=".note"
-            android:exported="false" />
-        <activity
-            android:name=".numberlistview"
-            android:exported="false" />
-        <activity
-            android:name=".khorus_number"
             android:exported="false" />
         <activity
             android:name=".hymn_number"

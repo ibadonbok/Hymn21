@@ -5,4 +5,5 @@
     <string name="password">password</string>
     <string name="login">Login</string>
     <string name="sign_up">SIGN UP</string>
+    <string name="hymn_author_hey_author">Hymn Author: hey author</string>
 </resources>

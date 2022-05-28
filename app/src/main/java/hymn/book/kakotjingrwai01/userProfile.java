@@ -41,8 +41,6 @@ public class userProfile extends AppCompatActivity {
             onBackPressed();
             finish();
         });
-
-
     }
 
     private void loadUserData(FirebaseFirestore userdb, FirebaseAuth firebaseAuth) {
@@ -57,6 +55,7 @@ public class userProfile extends AppCompatActivity {
                             String name = task.getResult().get("NAME").toString();
                             String age = task.getResult().get("AGE").toString();
                             String gender = task.getResult().get("GENDER").toString();
+                            String email = task.getResult().get("EMAIL").toString();
                             userProfileBinding.yourName.setText(name);
                             userProfileBinding.age.setText(age);
                             userProfileBinding.yourEmail.setText(firebaseAuth.getCurrentUser().getEmail());
@@ -64,19 +63,11 @@ public class userProfile extends AppCompatActivity {
                         }
                     }
 
-
                 }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
                 Toast.makeText(userProfile.this, "Access to Data failed"+e.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
             }
         });
-
-
-
     }
-
-
-
-
 }

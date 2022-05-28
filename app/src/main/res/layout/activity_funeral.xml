@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".hymn_number">
+    tools:context=".Funeral">
 
     <ImageButton
-        android:id="@+id/hymnBackBtn"
+        android:id="@+id/funeralBackBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -18,19 +18,19 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/hymnHeading"
+        android:id="@+id/funeralHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hymn Number"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/hymnBackBtn"
+        app:layout_constraintBottom_toBottomOf="@+id/funeralBackBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/hymnBackBtn" />
+        app:layout_constraintTop_toTopOf="@+id/funeralBackBtn" />
 
 
     <SearchView
-        android:id="@+id/number_search"
+        android:id="@+id/funeral_search"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
@@ -42,10 +42,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hymnHeading" />
+        app:layout_constraintTop_toBottomOf="@+id/funeralHeading" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/hymnRecyclerView"
+        android:id="@+id/funeralRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
@@ -53,6 +53,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/number_search" />
+        app:layout_constraintTop_toBottomOf="@+id/funeral_search" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

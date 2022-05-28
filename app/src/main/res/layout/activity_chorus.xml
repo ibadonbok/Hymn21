@@ -4,55 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".hymn_number">
+    tools:context=".Chorus">
 
     <ImageButton
-        android:id="@+id/hymnBackBtn"
+        android:id="@+id/chorusBackBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
         android:backgroundTint="@color/transparent"
         android:src="@drawable/back_icon"
+        app:layout_constraintBottom_toTopOf="@+id/chorusSearch"
+        app:layout_constraintEnd_toStartOf="@+id/chorusHeading"
+        app:layout_constraintHorizontal_bias="0.195"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/hymnHeading"
+        android:id="@+id/chorusHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hymn Number"
+        android:layout_marginStart="66dp"
+        android:layout_marginEnd="217dp"
+        android:text="Chorus"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/hymnBackBtn"
+        app:layout_constraintBottom_toTopOf="@+id/chorusSearch"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/hymnBackBtn" />
+        app:layout_constraintStart_toEndOf="@+id/chorusBackBtn"
+        app:layout_constraintTop_toTopOf="parent" />
 
-
-    <SearchView
-        android:id="@+id/number_search"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
+    <EditText
+        android:id="@+id/chorusSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
-        android:iconifiedByDefault="false"
-        android:queryHint="Search Here"
-        android:searchIcon="@drawable/ic_action_search"
+        app:iconifiedByDefault="false"
+        android:inputType="textAutoComplete"
+        android:hint="Search Here.."
+        android:drawableStart="@drawable/ic_action_search"
+
+        app:layout_constraintBottom_toTopOf="@+id/chorusRecyclerView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hymnHeading" />
+        app:layout_constraintTop_toBottomOf="@+id/chorusBackBtn"
+        app:layout_constraintVertical_bias="0.56" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/hymnRecyclerView"
+        android:id="@+id/chorusRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="8dp"
         android:orientation="vertical"
+        android:background="@drawable/search_view_bg"
+
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/number_search" />
+        app:layout_constraintTop_toBottomOf="@id/chorusSearch"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

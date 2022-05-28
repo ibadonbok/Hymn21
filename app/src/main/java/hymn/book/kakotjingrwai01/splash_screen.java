@@ -16,13 +16,11 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class splash_screen extends AppCompatActivity {
 
-    private static   final int SPLASH_SCREEN=3000;
-
     //variables
     Animation top_anima;
     Animation bottom_anima;
-    //ImageView image;
-    //TextView logo,slogan;
+    ImageView image;
+    TextView logo,slogan;
 
     private FirebaseAuth firebaseAuth;
     @Override
@@ -43,23 +41,19 @@ public class splash_screen extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.splash_screen);
 
-        //Animation
+       // Animation
         top_anima= AnimationUtils.loadAnimation(this,R.anim.top_animation);
         bottom_anima= AnimationUtils.loadAnimation(this,R.anim.bottom_animation);
 
         //Hooks
-      /*  image = findViewById(R.id.imageView);
-        logo = findViewById(R.id.textView4);
-        slogan = findViewById(R.id.hari);
+        image = findViewById(R.id.simage);
+        logo = findViewById(R.id.s3);
+        slogan = findViewById(R.id.s1);
 
         image.setAnimation(top_anima);
         logo.setAnimation(bottom_anima);
-        slogan.setAnimation(bottom_anima);*/
+        slogan.setAnimation(bottom_anima);
 
-       /* new Handler().postDelayed(() -> {
-            Intent intent = new Intent(splash_screen.this,Login.class);
-            startActivity(intent);
-            finish();
-        },SPLASH_SCREEN);*/
+
     }
 }

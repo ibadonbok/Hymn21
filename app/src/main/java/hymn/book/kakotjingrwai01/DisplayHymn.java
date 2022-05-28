@@ -27,11 +27,10 @@ public class DisplayHymn extends AppCompatActivity {
       displayHymnBinding.Hnumber.setText(getIntent().getStringExtra("ID"));
       displayHymnBinding.Htitle.setText(getIntent().getStringExtra("TITLE"));
       displayHymnBinding.Hauthor.setText(getIntent().getStringExtra("AUTHOR"));
-      displayHymnBinding.Hlyric.setText(getIntent().getStringExtra("LYRIC"));
-
-
-
-
+      //displayHymnBinding.Hlyric.setText(getIntent().getStringExtra("LYRIC"));
+        String lyrics=getIntent().getStringExtra("LYRIC");
+        lyrics=lyrics.replace("_b","\n");
+        displayHymnBinding.Hlyric.setText(lyrics);
 
     }
 }

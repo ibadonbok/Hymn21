@@ -8,9 +8,27 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-<!--    App colors-->
+    <!--    App colors-->
     <color name="transparent">#00FFFFFF</color>
     <color name="headcolor">#F0243D88</color>
     <color name="buttoncolor">#6AA1FD</color>
+    <color name="blue">#FF4099C1</color>
+    <color name="grey">#FFAAA3A3</color>
+    <color name="skyblue">#FF95D7F4</color>
+
+
+    <color name="red">#E47E75</color>
+    <color name="yellow">#FFCA2A</color>
+
+    <color name="l1">#FFE9F5</color>
+    <color name="l2">#FFF4E0</color>
+    <color name="l3">#E9EDFF</color>
+    <color name="l4">#FAEEE7</color>
+    <color name="l5">#F7E7FA</color>
+    <color name="l6">#E7FAE9</color>
+    <color name="l7">#F7E7FA</color>
+    <color name="l8">#EFE7FA</color>
+    <color name="bgcolor">#C0E1DD</color>
+
 
 </resources>
